@@ -1,0 +1,27 @@
+<!-- Order Here Section -->
+<section id="order" style="padding: 60px 20px; background: #fff0f6;">
+  <h2 style="text-align:center; font-size: 32px; color:#d63384; margin-bottom: 30px;">Place Your Order</h2>
+  <form action="submit_order.php" method="POST" style="max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <label for="name" style="display:block; margin-bottom: 10px;">Full Name:</label>
+    <input type="text" name="name" id="name" required style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+
+    <label for="email" style="display:block; margin-bottom: 10px;">Email:</label>
+    <input type="email" name="email" id="email" required style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+
+    <label for="mobile" style="display:block; margin-bottom: 10px;">Mobile Number:</label>
+    <input type="tel" name="mobile" id="mobile" required style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+
+    <label for="address" style="display:block; margin-bottom: 10px;">Address:</label>
+    <textarea name="address" id="address" rows="3" required style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+
+    <label for="product" style="display:block; margin-bottom: 10px;">Select Product:</label>
+    <select name="product" id="product" required style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+      <option value="">-- Choose a product --</option>
+      <option value="Glow Serum">Glow Serum</option>
+      <option value="Aloe Face Cream">Aloe Face Cream</option>
+      <option value="Herbal Cleanser">Herbal Cleanser</option>
+    </select>
+
+    <button type="submit" style="width: 100%; background: #d63384; color: white; padding: 12px; font-size: 16px; border: none; border-radius: 30px; cursor: pointer;">Submit Order</button>
+  </form>
+</section>
